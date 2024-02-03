@@ -1,0 +1,10 @@
+pip
+flask
+numpy
+panda
+matplotlib
+scikit-learn
+scipy
+os
+ipython
+huggingfacehub

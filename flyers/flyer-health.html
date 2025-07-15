@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #059669 0%, #047857 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #059669 0%, #047857 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.5rem; color: #059669; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: #64748b; }
+        .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .plan-card { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #059669; }
+        .plan-card h3 { color: #059669; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .plan-card ul { list-style: none; }
+        .plan-card ul li { padding: 0.3rem 0; color: #374151; }
+        .plan-card ul li:before { content: "💚"; margin-right: 0.5rem; }
+        .coverage { background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .coverage h3 { text-align: center; color: #1e293b; margin-bottom: 1.5rem; }
+        .coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .coverage-item { text-align: center; padding: 1rem; background: white; border-radius: 8px; }
+        .coverage-item i { font-size: 2rem; color: #059669; margin-bottom: 0.5rem; }
+        .coverage-item h4 { color: #1e293b; margin-bottom: 0.5rem; }
+        .coverage-item p { color: #64748b; font-size: 0.9rem; }
+        .contact-info { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #f59e0b; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-plus"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Protect Your Health & Finances</div>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h2>Health Insurance</h2>
+                <p>Comprehensive medical coverage for you and your family</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3><i class="fas fa-user"></i> Individual Health Plans</h3>
+                    <ul>
+                        <li>Personal medical coverage</li>
+                        <li>Cashless hospitalization</li>
+                        <li>Pre & post hospitalization</li>
+                        <li>Day care procedures</li>
+                        <li>Annual health checkups</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-users"></i> Family Floater Plans</h3>
+                    <ul>
+                        <li>Entire family under one policy</li>
+                        <li>Shared sum insured</li>
+                        <li>Cost-effective premium</li>
+                        <li>Newborn coverage from day 1</li>
+                        <li>No capping on individual claims</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-heart-broken"></i> Critical Illness Cover</h3>
+                    <ul>
+                        <li>Coverage for major diseases</li>
+                        <li>Lump sum payout on diagnosis</li>
+                        <li>25+ critical illnesses covered</li>
+                        <li>Income replacement benefit</li>
+                        <li>No hospitalization required</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-user-friends"></i> Senior Citizen Plans</h3>
+                    <ul>
+                        <li>Specialized plans for elderly</li>
+                        <li>Pre-existing disease coverage</li>
+                        <li>Higher sum insured options</li>
+                        <li>Domiciliary treatment</li>
+                        <li>AYUSH treatment included</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coverage">
+                <h3>What's Covered?</h3>
+                <div class="coverage-grid">
+                    <div class="coverage-item">
+                        <i class="fas fa-hospital"></i>
+                        <h4>Hospitalization</h4>
+                        <p>Room rent, ICU charges, surgeon fees</p>
+                    </div>
+                    <div class="coverage-item">
+                        <i class="fas fa-pills"></i>
+                        <h4>Medicines</h4>
+                        <p>Prescribed drugs & pharmacy bills</p>
+                    </div>
+                    <div class="coverage-item">
+                        <i class="fas fa-x-ray"></i>
+                        <h4>Diagnostics</h4>
+                        <p>Lab tests, X-rays, MRI, CT scans</p>
+                    </div>
+                    <div class="coverage-item">
+                        <i class="fas fa-ambulance"></i>
+                        <h4>Emergency</h4>
+                        <p>Ambulance charges & emergency care</p>
+                    </div>
+                    <div class="coverage-item">
+                        <i class="fas fa-user-md"></i>
+                        <h4>Specialist</h4>
+                        <p>Consultation with specialists</p>
+                    </div>
+                    <div class="coverage-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>AYUSH</h4>
+                        <p>Ayurveda, Yoga, Homeopathy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-stethoscope"></i> Get Your Health Insurance Quote!</h3>
+                <p>Protect your family's health with comprehensive medical coverage tailored to your needs</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Pune, Maharashtra | Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Licensed Health Insurance Advisor | Cashless Network Hospitals | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Insurance Solutions - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .service-card { background: #f8fafc; padding: 1.5rem; border-radius: 12px; border-left: 4px solid #2563eb; }
+        .service-card i { font-size: 2rem; color: #2563eb; margin-bottom: 0.5rem; }
+        .service-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .service-card ul { list-style: none; }
+        .service-card ul li { padding: 0.2rem 0; color: #64748b; }
+        .service-card ul li:before { content: "✓"; color: #10b981; font-weight: bold; margin-right: 0.5rem; }
+        .contact-info { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fee2e2; border: 2px solid #dc2626; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #dc2626; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Your Trusted Insurance Partner</div>
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center; margin-bottom: 1rem; color: #1e293b;">Complete Insurance Solutions</h2>
+            <p style="text-align: center; color: #64748b; margin-bottom: 2rem;">Professional insurance guidance with years of experience. Get personalized coverage for all your insurance needs.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Life Insurance</h3>
+                    <ul>
+                        <li>Term Life Insurance</li>
+                        <li>Whole Life Insurance</li>
+                        <li>ULIP Plans</li>
+                        <li>Pension Plans</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-plus"></i>
+                    <h3>Health Insurance</h3>
+                    <ul>
+                        <li>Individual Health Plans</li>
+                        <li>Family Floater Plans</li>
+                        <li>Critical Illness Cover</li>
+                        <li>Senior Citizen Plans</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Vehicle Insurance</h3>
+                    <ul>
+                        <li>Car Insurance</li>
+                        <li>Two Wheeler Insurance</li>
+                        <li>Commercial Vehicle</li>
+                        <li>Zero Depreciation Cover</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Property Insurance</h3>
+                    <ul>
+                        <li>Home Insurance</li>
+                        <li>Fire Insurance</li>
+                        <li>Property Protection</li>
+                        <li>Contents Coverage</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Travel Insurance</h3>
+                    <ul>
+                        <li>Domestic Travel</li>
+                        <li>International Travel</li>
+                        <li>Medical Emergency</li>
+                        <li>Trip Cancellation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Business Insurance</h3>
+                    <ul>
+                        <li>Shop Insurance</li>
+                        <li>Office Insurance</li>
+                        <li>Professional Indemnity</li>
+                        <li>Business Liability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-phone"></i> Get Your Free Quote Today!</h3>
+                <p>Call now for personalized insurance solutions tailored to your needs</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pune, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Available</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9AM-7PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Office No. 12, Prime Business Center, Pune, MH</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Professional Insurance Services | Licensed & Experienced | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.5rem; color: #dc2626; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: #64748b; }
+        .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .plan-card { background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #dc2626; position: relative; }
+        .plan-card h3 { color: #dc2626; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .plan-card ul { list-style: none; }
+        .plan-card ul li { padding: 0.3rem 0; color: #374151; }
+        .plan-card ul li:before { content: "❤️"; margin-right: 0.5rem; }
+        .benefits { background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .benefits h3 { text-align: center; color: #1e293b; margin-bottom: 1.5rem; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .benefit-item { text-align: center; padding: 1rem; }
+        .benefit-item i { font-size: 2rem; color: #dc2626; margin-bottom: 0.5rem; }
+        .benefit-item h4 { color: #1e293b; margin-bottom: 0.5rem; }
+        .benefit-item p { color: #64748b; font-size: 0.9rem; }
+        .contact-info { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #f59e0b; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Secure Your Family's Future</div>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h2>Life Insurance</h2>
+                <p>Comprehensive life coverage plans designed to protect your loved ones</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3><i class="fas fa-shield-alt"></i> Term Life Insurance</h3>
+                    <ul>
+                        <li>Pure life protection at low cost</li>
+                        <li>High sum assured for family security</li>
+                        <li>Tax benefits under Section 80C</li>
+                        <li>Flexible premium payment options</li>
+                        <li>Optional riders available</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-infinity"></i> Whole Life Insurance</h3>
+                    <ul>
+                        <li>Lifetime coverage guarantee</li>
+                        <li>Cash value accumulation</li>
+                        <li>Loan facility against policy</li>
+                        <li>Maturity benefit included</li>
+                        <li>Wealth creation opportunity</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-chart-line"></i> ULIP Plans</h3>
+                    <ul>
+                        <li>Investment + Insurance combined</li>
+                        <li>Market-linked returns potential</li>
+                        <li>Fund switching flexibility</li>
+                        <li>Tax benefits on premium & maturity</li>
+                        <li>Top-up facility available</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-user-clock"></i> Pension Plans</h3>
+                    <ul>
+                        <li>Retirement income planning</li>
+                        <li>Annuity options available</li>
+                        <li>Immediate or deferred pension</li>
+                        <li>Spouse pension provision</li>
+                        <li>Inflation protection options</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h3>Why Choose Our Life Insurance?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-family"></i>
+                        <h4>Family Security</h4>
+                        <p>Protect your family's financial future</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-receipt"></i>
+                        <h4>Tax Benefits</h4>
+                        <p>Save taxes under Section 80C & 10(10D)</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-piggy-bank"></i>
+                        <h4>Wealth Creation</h4>
+                        <p>Build corpus for future goals</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h4>Peace of Mind</h4>
+                        <p>Financial security for your loved ones</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-calculator"></i> Get Your Life Insurance Quote Today!</h3>
+                <p>Personalized life insurance solutions based on your family's needs and budget</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Pune, Maharashtra | Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Licensed Life Insurance Advisor | Expert Guidance | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family="Inter":wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.5rem; color: #7c3aed; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: #64748b; }
+        .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .plan-card { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #7c3aed; }
+        .plan-card h3 { color: #7c3aed; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .plan-card ul { list-style: none; }
+        .plan-card ul li { padding: 0.3rem 0; color: #374151; }
+        .plan-card ul li:before { content: "🚗"; margin-right: 0.5rem; }
+        .features { background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .features h3 { text-align: center; color: #1e293b; margin-bottom: 1.5rem; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .feature-item { text-align: center; padding: 1rem; background: white; border-radius: 8px; }
+        .feature-item i { font-size: 2rem; color: #7c3aed; margin-bottom: 0.5rem; }
+        .feature-item h4 { color: #1e293b; margin-bottom: 0.5rem; }
+        .feature-item p { color: #64748b; font-size: 0.9rem; }
+        .contact-info { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #f59e0b; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Drive with Complete Confidence</div>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h2>Car Insurance</h2>
+                <p>Comprehensive vehicle protection for your peace of mind</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3><i class="fas fa-shield"></i> Third Party Insurance</h3>
+                    <ul>
+                        <li>Mandatory by law coverage</li>
+                        <li>Third party liability protection</li>
+                        <li>Death & injury compensation</li>
+                        <li>Property damage coverage</li>
+                        <li>Affordable premium rates</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-shield-alt"></i> Comprehensive Coverage</h3>
+                    <ul>
+                        <li>Own damage + third party</li>
+                        <li>Theft & burglary protection</li>
+                        <li>Natural calamity coverage</li>
+                        <li>Personal accident cover</li>
+                        <li>Zero depreciation option</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-motorcycle"></i> Two Wheeler Insurance</h3>
+                    <ul>
+                        <li>Bike & scooter coverage</li>
+                        <li>Accident protection</li>
+                        <li>Theft coverage included</li>
+                        <li>Passenger liability cover</li>
+                        <li>Quick claim settlement</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <h3><i class="fas fa-truck"></i> Commercial Vehicle</h3>
+                    <ul>
+                        <li>Goods carrying vehicles</li>
+                        <li>Passenger carrying vehicles</li>
+                        <li>Fleet insurance options</li>
+                        <li>Driver liability coverage</li>
+                        <li>Business use protection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3>Additional Features & Benefits</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-tools"></i>
+                        <h4>Roadside Assistance</h4>
+                        <p>24x7 emergency roadside help</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-credit-card"></i>
+                        <h4>Cashless Repair</h4>
+                        <p>Network garages for hassle-free claims</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile App</h4>
+                        <p>Easy policy management & claims</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Quick Claims</h4>
+                        <p>Fast claim processing & settlement</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-percentage"></i>
+                        <h4>No Claim Bonus</h4>
+                        <p>Discount for claim-free years</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-car-crash"></i>
+                        <h4>Accident Cover</h4>
+                        <p>Personal accident for driver & passengers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-calculator"></i> Get Your Car Insurance Quote!</h3>
+                <p>Compare plans and get the best car insurance rates for your vehicle</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Pune, Maharashtra | Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Licensed Motor Insurance Agent | Cashless Network Garages | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

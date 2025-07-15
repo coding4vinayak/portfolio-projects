@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Flyers - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="logo-text">
+                        <h1>Urmila Deshmukh</h1>
+                        <p>Insurance Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <h2>Insurance Flyers</h2>
+                <p>Download and share our professional insurance flyers</p>
+            </div>
+
+            <div class="flyers-grid">
+                <!-- General Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content general">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Complete Insurance Solutions</h3>
+                            <p>Your Trusted Insurance Partner</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>General Insurance Flyer</h4>
+                        <p>Complete overview of all our insurance services</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('general')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('general')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Life Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content life">
+                            <i class="fas fa-heart"></i>
+                            <h3>Life Insurance</h3>
+                            <p>Secure Your Family's Future</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Life Insurance Flyer</h4>
+                        <p>Term life, whole life, ULIP plans, and pension plans</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('life')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('life')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content health">
+                            <i class="fas fa-plus"></i>
+                            <h3>Health Insurance</h3>
+                            <p>Protect Your Health & Finances</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Health Insurance Flyer</h4>
+                        <p>Individual, family, critical illness, and senior plans</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('health')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('health')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content car">
+                            <i class="fas fa-car"></i>
+                            <h3>Car Insurance</h3>
+                            <p>Drive with Complete Confidence</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Car Insurance Flyer</h4>
+                        <p>Comprehensive coverage for cars and two-wheelers</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('car')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('car')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content home">
+                            <i class="fas fa-home"></i>
+                            <h3>Home Insurance</h3>
+                            <p>Protect Your Most Valuable Asset</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Home Insurance Flyer</h4>
+                        <p>Fire, theft, natural disasters, and property coverage</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('home')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('home')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content travel">
+                            <i class="fas fa-plane"></i>
+                            <h3>Travel Insurance</h3>
+                            <p>Travel Worry-Free Anywhere</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Travel Insurance Flyer</h4>
+                        <p>Domestic and international travel protection</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('travel')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('travel')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content business">
+                            <i class="fas fa-building"></i>
+                            <h3>Business Insurance</h3>
+                            <p>Protect Your Business Investment</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Business Insurance Flyer</h4>
+                        <p>Property, liability, and professional indemnity</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('business')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('business')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motor Insurance Flyer -->
+                <div class="flyer-card">
+                    <div class="flyer-preview">
+                        <div class="preview-content motor">
+                            <i class="fas fa-motorcycle"></i>
+                            <h3>Motor Insurance</h3>
+                            <p>Complete Vehicle Protection</p>
+                        </div>
+                    </div>
+                    <div class="flyer-info">
+                        <h4>Motor Insurance Flyer</h4>
+                        <p>Two-wheeler and commercial vehicle insurance</p>
+                        <div class="flyer-actions">
+                            <button class="btn btn-download" onclick="downloadFlyer('motor')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                            <button class="btn btn-share" onclick="shareFlyer('motor')">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>Get Your Personalized Quote Today!</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919999999999">+91 99999 99999</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center, Pune, MH</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919999999999" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created by <a href="https://abetworks.in" target="_blank" rel="noopener noreferrer">abetworks.in</a></p>
+        </div>
+    </footer>
+
+    <!-- Share Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Share Flyer</h3>
+            <div class="share-options">
+                <button class="share-btn whatsapp" onclick="shareViaWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button class="share-btn email" onclick="shareViaEmail()">
+                    <i class="fas fa-envelope"></i> Email
+                </button>
+                <button class="share-btn copy" onclick="copyLink()">
+                    <i class="fas fa-copy"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

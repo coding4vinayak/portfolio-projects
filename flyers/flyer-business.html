@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Insurance - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.5rem; color: #4338ca; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: #64748b; }
+        .coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .coverage-card { background: linear-gradient(135deg, #f8faff 0%, #e0e7ff 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #4338ca; }
+        .coverage-card h3 { color: #4338ca; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .coverage-card ul { list-style: none; }
+        .coverage-card ul li { padding: 0.3rem 0; color: #374151; }
+        .coverage-card ul li:before { content: "🏢"; margin-right: 0.5rem; }
+        .sectors { background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .sectors h3 { text-align: center; color: #1e293b; margin-bottom: 1.5rem; }
+        .sectors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .sector-item { text-align: center; padding: 1rem; background: white; border-radius: 8px; }
+        .sector-item i { font-size: 2rem; color: #4338ca; margin-bottom: 0.5rem; }
+        .sector-item h4 { color: #1e293b; margin-bottom: 0.5rem; }
+        .sector-item p { color: #64748b; font-size: 0.9rem; }
+        .contact-info { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #f59e0b; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-building"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Protect Your Business Investment</div>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h2>Business Insurance</h2>
+                <p>Comprehensive commercial insurance solutions for your business</p>
+            </div>
+
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3><i class="fas fa-store"></i> Shop Insurance</h3>
+                    <ul>
+                        <li>Property & contents coverage</li>
+                        <li>Stock & inventory protection</li>
+                        <li>Business interruption cover</li>
+                        <li>Public liability insurance</li>
+                        <li>Employee compensation</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-building"></i> Office Insurance</h3>
+                    <ul>
+                        <li>Office premises protection</li>
+                        <li>Equipment & furniture cover</li>
+                        <li>Data & document protection</li>
+                        <li>Professional indemnity</li>
+                        <li>Cyber liability coverage</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-gavel"></i> Professional Indemnity</h3>
+                    <ul>
+                        <li>Professional liability cover</li>
+                        <li>Errors & omissions protection</li>
+                        <li>Legal defence costs</li>
+                        <li>Client claims coverage</li>
+                        <li>Reputation protection</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-users"></i> Group Insurance</h3>
+                    <ul>
+                        <li>Employee group health</li>
+                        <li>Group life insurance</li>
+                        <li>Group personal accident</li>
+                        <li>Gratuity plans</li>
+                        <li>Employee benefits package</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sectors">
+                <h3>Business Sectors We Cover</h3>
+                <div class="sectors-grid">
+                    <div class="sector-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4>Retail</h4>
+                        <p>Shops, showrooms, malls</p>
+                    </div>
+                    <div class="sector-item">
+                        <i class="fas fa-industry"></i>
+                        <h4>Manufacturing</h4>
+                        <p>Factories, production units</p>
+                    </div>
+                    <div class="sector-item">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Restaurants</h4>
+                        <p>Hotels, cafes, food service</p>
+                    </div>
+                    <div class="sector-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>IT Services</h4>
+                        <p>Software, consulting, tech</p>
+                    </div>
+                    <div class="sector-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>Schools, colleges, coaching</p>
+                    </div>
+                    <div class="sector-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Healthcare</h4>
+                        <p>Clinics, hospitals, labs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-briefcase"></i> Secure Your Business Today!</h3>
+                <p>Get comprehensive business insurance tailored to your industry and needs</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Pune, Maharashtra | Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Licensed Commercial Insurance Advisor | Industry Expertise | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

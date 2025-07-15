@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Insurance - Urmila Deshmukh Insurance Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%); min-height: 100vh; padding: 20px; }
+        .flyer { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%); color: white; padding: 2rem; text-align: center; }
+        .logo { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 1rem; }
+        .logo i { font-size: 3rem; }
+        .logo-text h1 { font-size: 2rem; font-weight: 700; }
+        .logo-text p { font-size: 1rem; opacity: 0.9; }
+        .tagline { font-size: 1.5rem; font-weight: 600; margin-top: 1rem; }
+        .content { padding: 2rem; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.5rem; color: #ea580c; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; color: #64748b; }
+        .coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .coverage-card { background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%); padding: 1.5rem; border-radius: 12px; border: 2px solid #ea580c; }
+        .coverage-card h3 { color: #ea580c; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .coverage-card ul { list-style: none; }
+        .coverage-card ul li { padding: 0.3rem 0; color: #374151; }
+        .coverage-card ul li:before { content: "🏠"; margin-right: 0.5rem; }
+        .protection { background: #f8fafc; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .protection h3 { text-align: center; color: #1e293b; margin-bottom: 1.5rem; }
+        .protection-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .protection-item { text-align: center; padding: 1rem; background: white; border-radius: 8px; }
+        .protection-item i { font-size: 2rem; color: #ea580c; margin-bottom: 0.5rem; }
+        .protection-item h4 { color: #1e293b; margin-bottom: 0.5rem; }
+        .protection-item p { color: #64748b; font-size: 0.9rem; }
+        .contact-info { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .contact-item i { font-size: 1.2rem; }
+        .footer { text-align: center; padding: 1rem; background: #1e293b; color: #94a3b8; }
+        .cta { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0; }
+        .cta h3 { color: #f59e0b; margin-bottom: 0.5rem; }
+        @media print { body { background: white; padding: 0; } .flyer { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <div class="logo-text">
+                    <h1>Urmila Deshmukh</h1>
+                    <p>Insurance Services</p>
+                </div>
+            </div>
+            <div class="tagline">Protect Your Most Valuable Asset</div>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h2>Home Insurance</h2>
+                <p>Comprehensive protection for your home and belongings</p>
+            </div>
+
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3><i class="fas fa-fire"></i> Fire & Allied Perils</h3>
+                    <ul>
+                        <li>Fire damage coverage</li>
+                        <li>Lightning & explosion</li>
+                        <li>Aircraft damage</li>
+                        <li>Storm & flood protection</li>
+                        <li>Emergency accommodation</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-mask"></i> Burglary & Theft</h3>
+                    <ul>
+                        <li>Household items protection</li>
+                        <li>Jewellery & valuables</li>
+                        <li>Electronic items coverage</li>
+                        <li>Lock replacement cost</li>
+                        <li>Temporary accommodation</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-tint"></i> Water Damage</h3>
+                    <ul>
+                        <li>Burst pipe damage</li>
+                        <li>Overflow from tanks</li>
+                        <li>Leakage from appliances</li>
+                        <li>Rain water damage</li>
+                        <li>Drying & restoration costs</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3><i class="fas fa-gavel"></i> Public Liability</h3>
+                    <ul>
+                        <li>Third party injury claims</li>
+                        <li>Property damage liability</li>
+                        <li>Legal defence costs</li>
+                        <li>Domestic helper coverage</li>
+                        <li>Visitor accident protection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="protection">
+                <h3>What We Protect</h3>
+                <div class="protection-grid">
+                    <div class="protection-item">
+                        <i class="fas fa-building"></i>
+                        <h4>Building Structure</h4>
+                        <p>Walls, roof, floors, fixtures</p>
+                    </div>
+                    <div class="protection-item">
+                        <i class="fas fa-couch"></i>
+                        <h4>Contents</h4>
+                        <p>Furniture, appliances, belongings</p>
+                    </div>
+                    <div class="protection-item">
+                        <i class="fas fa-gem"></i>
+                        <h4>Valuables</h4>
+                        <p>Jewellery, art, antiques</p>
+                    </div>
+                    <div class="protection-item">
+                        <i class="fas fa-laptop"></i>
+                        <h4>Electronics</h4>
+                        <p>TV, computer, mobile devices</p>
+                    </div>
+                    <div class="protection-item">
+                        <i class="fas fa-tree"></i>
+                        <h4>Garden</h4>
+                        <p>Plants, garden furniture, tools</p>
+                    </div>
+                    <div class="protection-item">
+                        <i class="fas fa-car"></i>
+                        <h4>Garage</h4>
+                        <p>Garage contents, bicycles</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3><i class="fas fa-home"></i> Secure Your Home Today!</h3>
+                <p>Get comprehensive home insurance coverage at competitive rates</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1rem;">Contact Urmila Deshmukh</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Office No. 12, Prime Business Center</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +91 99999 99999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Pune, Maharashtra | Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Licensed Home Insurance Advisor | Quick Claim Settlement | Created by abetworks.in</p>
+        </div>
+    </div>
+</body>
+</html>

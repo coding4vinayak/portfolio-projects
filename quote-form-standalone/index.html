@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Insurance Quote - Urmila Deshmukh Insurance Services</title>
+    <meta name="description" content="Get personalized insurance quotes from Urmila Deshmukh Insurance Services. Life, health, car, travel, and business insurance available with multilingual support.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="logo-text">
+                        <h1>Urmila Deshmukh</h1>
+                        <p>Insurance Services</p>
+                    </div>
+                </div>
+                
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select id="languageSelect">
+                        <option value="english">English</option>
+                        <option value="hindi">हिंदी</option>
+                        <option value="marathi">मराठी</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <h2 id="pageTitle">Get Insurance Quote</h2>
+                <p id="pageSubtitle">Fill out this form to get a personalized insurance quote from Urmila Deshmukh</p>
+            </div>
+
+            <div class="form-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 id="contactInfoTitle">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <a href="tel:+919999999999" class="contact-link">+91 99999 99999</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="contact-label">Address</p>
+                                <p class="contact-text">Office No. 12, Prime Business Center, Pune, MH</p>
+                            </div>
+                        </div>
+                        
+                        <div class="office-hours">
+                            <p class="contact-label" id="officeHoursTitle">Office Hours</p>
+                            <p class="contact-text" id="mondayToSaturday">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                            <p class="contact-text" id="sunday">Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                        
+                        <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span id="whatsappText">Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quote Form -->
+                <div class="form-section">
+                    <div class="form-card">
+                        <h3 id="formTitle">Insurance Quote Request</h3>
+                        
+                        <form id="quoteForm" class="quote-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" id="firstNameLabel">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" id="lastNameLabel">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" id="emailLabel">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" id="phoneLabel">Mobile Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="insuranceType" id="insuranceTypeLabel">Insurance Type *</label>
+                                    <select id="insuranceType" name="insuranceType" required>
+                                        <option value="" id="selectInsuranceOption">Select Insurance Type</option>
+                                        <option value="life">Life Insurance</option>
+                                        <option value="health">Health Insurance</option>
+                                        <option value="car">Car/Bike Insurance</option>
+                                        <option value="travel">Travel Insurance</option>
+                                        <option value="business">Business Insurance</option>
+                                        <option value="general">General Insurance</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="location" id="locationLabel">Location *</label>
+                                    <select id="location" name="location" required>
+                                        <option value="" id="selectLocationOption">Select Location</option>
+                                        <option value="pune">Pune</option>
+                                        <option value="mumbai">Mumbai</option>
+                                        <option value="nashik">Nashik</option>
+                                        <option value="nagpur">Nagpur</option>
+                                        <option value="kolhapur">Kolhapur</option>
+                                        <option value="aurangabad">Aurangabad</option>
+                                        <option value="solapur">Solapur</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address" id="addressLabel">Address</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" id="messageLabel">Message/Requirements</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn">Submit Quote Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3 id="successTitle">Quote Request Sent!</h3>
+            <p id="successText">Thank you for your quote request. We'll contact you soon with your personalized insurance quote.</p>
+            <button id="closeSuccess" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created by <a href="https://abetworks.in" target="_blank" rel="noopener noreferrer">abetworks.in</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

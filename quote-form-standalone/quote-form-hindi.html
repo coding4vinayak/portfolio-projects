@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीमा कोटेशन - उर्मिला देशमुख बीमा सेवाएं</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { background: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .logo { display: flex; align-items: center; gap: 12px; justify-content: center; }
+        .logo i { font-size: 2rem; color: #2563eb; }
+        .logo-text h1 { font-size: 1.5rem; font-weight: 700; color: #1f2937; }
+        .logo-text p { font-size: 0.875rem; color: #6b7280; }
+        .hero { text-align: center; margin-bottom: 30px; }
+        .hero h2 { font-size: 2rem; font-weight: 700; color: #1f2937; margin-bottom: 10px; }
+        .hero p { color: #6b7280; }
+        .form-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .form-group { margin-bottom: 20px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .form-group label { display: block; font-weight: 500; color: #374151; margin-bottom: 6px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        .submit-btn { width: 100%; background: #2563eb; color: white; padding: 16px 24px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease; }
+        .submit-btn:hover { background: #1d4ed8; }
+        .contact-info { background: #f3f4f6; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .contact-info h3 { color: #1f2937; margin-bottom: 15px; }
+        .contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+        .contact-item i { color: #2563eb; width: 20px; }
+        .whatsapp-btn { display: inline-flex; align-items: center; gap: 8px; background: #25d366; color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: 500; margin-top: 15px; }
+        .whatsapp-btn:hover { background: #22c55e; }
+        @media (max-width: 768px) { .form-row { grid-template-columns: 1fr; } .container { padding: 15px; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <div class="logo-text">
+                    <h1>उर्मिला देशमुख</h1>
+                    <p>बीमा सेवाएं</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h2>बीमा कोटेशन प्राप्त करें</h2>
+            <p>व्यक्तिगत बीमा कोटेशन प्राप्त करने के लिए यह फॉर्म भरें</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>संपर्क जानकारी</h3>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>फोन: <a href="tel:+919999999999" style="color: #2563eb;">+91 99999 99999</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>कार्यालय नं. 12, प्राइम बिजनेस सेंटर, पुणे, MH</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>सोम-शनि: सुबह 9:00 - शाम 7:00 | रवि: सुबह 10:00 - शाम 5:00</span>
+            </div>
+            <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp पर चैट करें
+            </a>
+        </div>
+
+        <div class="form-card">
+            <h3 style="margin-bottom: 20px; color: #1f2937;">बीमा कोटेशन अनुरोध</h3>
+            <form id="quoteForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">पहला नाम *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">अंतिम नाम</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">ईमेल पता *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">मोबाइल नंबर *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="insuranceType">बीमा प्रकार *</label>
+                        <select id="insuranceType" name="insuranceType" required>
+                            <option value="">बीमा प्रकार चुनें</option>
+                            <option value="life">जीवन बीमा</option>
+                            <option value="health">स्वास्थ्य बीमा</option>
+                            <option value="car">कार/बाइक बीमा</option>
+                            <option value="travel">यात्रा बीमा</option>
+                            <option value="business">व्यापार बीमा</option>
+                            <option value="general">सामान्य बीमा</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">स्थान *</label>
+                        <select id="location" name="location" required>
+                            <option value="">स्थान चुनें</option>
+                            <option value="pune">पुणे</option>
+                            <option value="mumbai">मुंबई</option>
+                            <option value="nashik">नासिक</option>
+                            <option value="nagpur">नागपुर</option>
+                            <option value="kolhapur">कोल्हापुर</option>
+                            <option value="aurangabad">औरंगाबाद</option>
+                            <option value="solapur">सोलापुर</option>
+                            <option value="other">अन्य</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">पता</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">संदेश/आवश्यकताएं</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">कोटेशन अनुरोध भेजें</button>
+            </form>
+        </div>
+    </div>
+
+    <footer style="background: #1f2937; color: #9ca3af; padding: 20px 0; text-align: center; margin-top: 3rem;">
+        <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <p>Created by <a href="https://abetworks.in" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none; font-weight: 500;">abetworks.in</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Basic validation
+            if (!data.firstName || !data.email || !data.phone || !data.insuranceType || !data.location) {
+                alert('कृपया सभी आवश्यक फ़ील्ड भरें');
+                return;
+            }
+            
+            // Success message
+            alert('कोटेशन अनुरोध सफलतापूर्वक भेजा गया! हम जल्द ही आपसे संपर्क करेंगे।');
+            
+            // Generate WhatsApp message
+            const message = `नया बीमा कोटेशन अनुरोध:\n\nनाम: ${data.firstName} ${data.lastName || ''}\nईमेल: ${data.email}\nफोन: ${data.phone}\nबीमा प्रकार: ${data.insuranceType}\nस्थान: ${data.location}\nपता: ${data.address || 'नहीं दिया गया'}\nसंदेश: ${data.message || 'कोई अतिरिक्त संदेश नहीं'}`;
+            
+            // Optional: Open WhatsApp
+            const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

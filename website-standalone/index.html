@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urmila Deshmukh Insurance Services - Your Trusted Insurance Advisor</title>
+    <meta name="description" content="Professional insurance services by Urmila Deshmukh. Get life, health, car, travel, and business insurance with expert guidance and personalized solutions.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Urmila Deshmukh Insurance</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Trusted Insurance Advisor</h1>
+            <p class="hero-subtitle">Comprehensive insurance solutions for Life, Health, Car, Travel, and Business insurance with expert guidance.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">Get Quote Now</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional Indian Insurance Advisor">
+        </div>
+    </section>
+
+    <!-- Services Carousel -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Our Insurance Services</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Life Insurance">
+                            <div class="slide-text">
+                                <h3>Life Insurance</h3>
+                                <p>Secure your family's future with comprehensive life insurance coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Health Insurance">
+                            <div class="slide-text">
+                                <h3>Health Insurance</h3>
+                                <p>Protect your health and finances with the best medical coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="https://images.pexels.com/photos/3807018/pexels-photo-3807018.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Car Insurance">
+                            <div class="slide-text">
+                                <h3>Car Insurance</h3>
+                                <p>Drive with confidence with comprehensive vehicle insurance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Travel Insurance">
+                            <div class="slide-text">
+                                <h3>Travel Insurance</h3>
+                                <p>Travel worry-free with comprehensive travel insurance coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Business Insurance">
+                            <div class="slide-text">
+                                <h3>Business Insurance</h3>
+                                <p>Protect your business with tailored commercial insurance solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                    <span class="indicator" onclick="currentSlide(4)"></span>
+                    <span class="indicator" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Insurance Services We Offer</h2>
+            <p class="section-subtitle">Comprehensive coverage for all your insurance needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon life">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Life Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Term Life Insurance</li>
+                        <li><i class="fas fa-check"></i> Whole Life Insurance</li>
+                        <li><i class="fas fa-check"></i> ULIP Plans</li>
+                        <li><i class="fas fa-check"></i> Pension Plans</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon health">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>Health Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Individual Health Plans</li>
+                        <li><i class="fas fa-check"></i> Family Health Plans</li>
+                        <li><i class="fas fa-check"></i> Critical Illness Cover</li>
+                        <li><i class="fas fa-check"></i> Senior Citizen Plans</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon car">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Third Party Insurance</li>
+                        <li><i class="fas fa-check"></i> Comprehensive Coverage</li>
+                        <li><i class="fas fa-check"></i> Two Wheeler Insurance</li>
+                        <li><i class="fas fa-check"></i> Commercial Vehicle</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon travel">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Domestic Travel</li>
+                        <li><i class="fas fa-check"></i> International Travel</li>
+                        <li><i class="fas fa-check"></i> Student Travel</li>
+                        <li><i class="fas fa-check"></i> Group Travel</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon business">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Business Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Property Insurance</li>
+                        <li><i class="fas fa-check"></i> Liability Insurance</li>
+                        <li><i class="fas fa-check"></i> Professional Indemnity</li>
+                        <li><i class="fas fa-check"></i> Group Insurance</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon general">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>General Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Home Insurance</li>
+                        <li><i class="fas fa-check"></i> Fire Insurance</li>
+                        <li><i class="fas fa-check"></i> Marine Insurance</li>
+                        <li><i class="fas fa-check"></i> Personal Accident</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Urmila Deshmukh?</h2>
+            <p class="section-subtitle">Your trusted insurance partner with years of experience</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Professional advice with years of industry experience</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    <p>Customized insurance solutions for your unique needs</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick Processing</h3>
+                    <p>Fast policy processing and claim settlement support</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trusted Partner</h3>
+                    <p>Long-term relationship with complete transparency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Your Insurance Quote</h2>
+            <p class="section-subtitle">Fill out the form below and get a personalized insurance quote</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+919999999999">+91 99999 99999</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Office No. 12, Prime Business Center<br>Pune, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Mon-Sat: 9:00 AM - 7:00 PM<br>Sun: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="insuranceType">Insurance Type *</label>
+                                <select id="insuranceType" name="insuranceType" required>
+                                    <option value="">Select Insurance Type</option>
+                                    <option value="life">Life Insurance</option>
+                                    <option value="health">Health Insurance</option>
+                                    <option value="car">Car/Bike Insurance</option>
+                                    <option value="travel">Travel Insurance</option>
+                                    <option value="business">Business Insurance</option>
+                                    <option value="general">General Insurance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location *</label>
+                                <select id="location" name="location" required>
+                                    <option value="">Select Location</option>
+                                    <option value="pune">Pune</option>
+                                    <option value="mumbai">Mumbai</option>
+                                    <option value="nashik">Nashik</option>
+                                    <option value="nagpur">Nagpur</option>
+                                    <option value="kolhapur">Kolhapur</option>
+                                    <option value="aurangabad">Aurangabad</option>
+                                    <option value="solapur">Solapur</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message/Requirements</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Quote Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Urmila Deshmukh Insurance</span>
+                    </div>
+                    <p>Your trusted insurance advisor providing comprehensive coverage for all your insurance needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Life Insurance</a></li>
+                        <li><a href="#services">Health Insurance</a></li>
+                        <li><a href="#services">Car Insurance</a></li>
+                        <li><a href="#services">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 99999 99999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Urmila Deshmukh Insurance Services. All rights reserved.</p>
+                <p>Created by <a href="https://abetworks.in" target="_blank" rel="noopener noreferrer">abetworks.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-float-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
